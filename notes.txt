@@ -1,0 +1,16 @@
+let const & var
+
+var: variables con be re-declared & update. A global scope variables.(before 2015 usnig)
+let: variables connot be re-declared but can be update. A block scope variables.
+const: variables connot be re-declared or update . a block scope variables. const is a object key updatea only
+
+
+Data types
+
+1. primitive: numbers, String ,boolean , undefined , null , biglnt, Symbol
+2. non- primitive: i.object(object is a collection of vales (key valuse of pair fatch tha valus of using key console.log(student["name"]))),
+  ii. function 
+  iv. Array  
+
+(let a=null typeof check 'object')
+let z= biglnt("8978")
