@@ -87,7 +87,6 @@ else {
 
 
 /* marks program */
-
 let marks=prompt("enter marks");
 if(marks>=90 && marks<=100){
      console.log("grade A");

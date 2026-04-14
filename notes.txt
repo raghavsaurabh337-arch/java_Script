@@ -43,3 +43,9 @@ let z= biglnt("8978")
 
 
 
+          #Loops in js  
+ 1. for loop
+ 2. while loop         
+ 3. do-while - one time loop run
+ 4. for-of(String)  /for-in(object,Array) loop  for(let val of strVar)
+ 
