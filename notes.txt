@@ -14,3 +14,32 @@ Data types
 
 (let a=null typeof check 'object')
 let z= biglnt("8978")
+
+
+
+            operater in js
+
+ 1.  Arithmetic operater
+          + ,-,/,*
+ modules (%)
+ exponentiation(**)
+  *unary operater
+      increment(++) / a=a+1;
+      decrement (--) / a=a-1;
+2. Assignment 
+  = ,+=,-=,*=,%=,**=
+3. conparison operater
+    == , != ,===(equal to & types), !==(not equal to & types) ,>,<,<=,>=   
+4. logical operater
+  AND && , OR || , NOT !
+5. ternary operater  
+     condition ? true : false out
+
+          #Conditional Statements
+1. IF 
+2.IF else
+3. If else If     website using(MDN Docs)
+4.    
+
+
+
