@@ -1,51 +1,70 @@
-let const & var
+JavaScript Variables
 
-var: variables con be re-declared & update. A global scope variables.(before 2015 usnig)
-let: variables connot be re-declared but can be update. A block scope variables.
-const: variables connot be re-declared or update . a block scope variables. const is a object key updatea only
+var
 
+Can be re-declared and updated
+Global scope
+Used before 2015
 
-Data types
+let
 
-1. primitive: numbers, String ,boolean , undefined , null , biglnt, Symbol
-2. non- primitive: i.object(object is a collection of vales (key valuse of pair fatch tha valus of using key console.log(student["name"]))),
-  ii. function 
-  iv. Array  
+Cannot be re-declared
+Can be updated
+Block scope
 
-(let a=null typeof check 'object')
-let z= biglnt("8978")
+const
 
+Cannot be re-declared or updated
+Block scope
+Object keys can be updated
+Data Types
+1. Primitive
+Number
+String
+Boolean
+Undefined
+Null
+BigInt
+Symbol
+2. Non-Primitive
+Object → key-value pairs
+Function
+Array
+let a = null;
+console.log(typeof a); // object
 
+let z = BigInt("8978");
+Operators in JavaScript
+1. Arithmetic Operators
++ , - , * , /
+% (modulus)
+** (exponentiation)
 
-            operater in js
+Unary Operators
 
- 1.  Arithmetic operater
-          + ,-,/,*
- modules (%)
- exponentiation(**)
-  *unary operater
-      increment(++) / a=a+1;
-      decrement (--) / a=a-1;
-2. Assignment 
-  = ,+=,-=,*=,%=,**=
-3. conparison operater
-    == , != ,===(equal to & types), !==(not equal to & types) ,>,<,<=,>=   
-4. logical operater
-  AND && , OR || , NOT !
-5. ternary operater  
-     condition ? true : false out
-
-          #Conditional Statements
-1. IF 
-2.IF else
-3. If else If     website using(MDN Docs)
-4.    
-
-
-
-          #Loops in js  
- 1. for loop
- 2. while loop         
- 3. do-while - one time loop run
- 4. for-of(String)  /for-in(object,Array) loop  for(let val of strVar)
- 
+++ (increment)
+-- (decrement)
+2. Assignment Operators
+= , += , -= , *= , %= , **=
+3. Comparison Operators
+== , !=
+=== , !==
+> , < , >= , <=
+4. Logical Operators
+&& (AND)
+|| (OR)
+! (NOT)
+5. Ternary Operator
+condition ? true : false;
+Conditional Statements
+if
+if...else
+if...else if...else
+Loops in JavaScript
+for
+while
+do...while (runs at least once)
+for...of (for string, array)
+for...in (for object, array)
+Array
+Collection of items
