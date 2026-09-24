@@ -27,3 +27,34 @@ console.log(booleanIsLogedIn)
 // "saurabh" => true
 // ""=> false
 
+
+// //***************************************************operations *****************/
+
+// console.log(2+3)
+// console.log(2-3)
+// console.log(2*3)
+// console.log(2/3)
+// console.log(2%3)
+// console.log(2**3)
+
+
+console.log("1"+3)
+console.log(1+"3")
+console.log("1"+3+4)
+console.log(1+3+"4")
+
+console.log(true)
+console.log(+true)
+
+
+let num1 ,num2, num3;
+
+num1=num2=num3=3+4
+console.log(num1)
+
+
+let x=34;
+x++
+console.log(x)
+++x
+console.log(x)
