@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="parsent">
+    <div class="parent">
         <div class="day">sunDay</div>
         <div class="day">MonDay</div>
         <div class="day">TuesDay</div>
@@ -22,7 +22,25 @@
     
 </body>
 <script>
-    const id=document.querySelectorAll('id')
-    console.log(id)
+    const parent=document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    for (let i=0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[2].style.color='red'
+    console.log(parent.lastElementChild)
+    console.log(parent.firstElementChild)
+
+    const days=document.querySelector('.day')
+    
+    console.log(days.nextElementSibling);
+    console.log(parent.childNodes);
+    
+    
+   
 </script>
 </html>
