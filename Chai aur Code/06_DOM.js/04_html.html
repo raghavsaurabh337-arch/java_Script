@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai our code DOM </title>
+</head>
+<body>
+   
+        <ul class="language">
+            <li>python</li>
+        </ul>
+    
+    
+</body>
+<script>
+    function addLanagues(lageName){
+        const li=document.createElement('li')
+        li.innerHTML=`${lageName}`
+        document.querySelector('.language').appendChild(li)
+
+
+    }
+    addLanagues("java")
+    addLanagues("java")
+    addLanagues("java")
+
+    function addOptiLanguage(lanName){ // big project 
+       const li=document.createElement('li')
+       li.appendChild(document.createTextNode(lanName))
+       document.querySelector('.language').appendChild(li)
+
+
+    }
+    addOptiLanguage("hello")
+
+    // Edit 
+    const secolan=document.querySelector("li:nth-child(2)")
+    const li=document.createElement('li')
+    li.textContent="mojo"
+    secolan.replaceWith(li)
+    // remove
+    const lange=document.querySelector('li:last-child')
+    lange.remove()
+</script>
+</html> 
