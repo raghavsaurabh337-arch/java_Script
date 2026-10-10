@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest number</title>
+    <style>
+        css * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #weapper {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            color: #222;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #243b55;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .form {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            color: #243b55;
+        }
+
+        #guessField {
+            width: 100%;
+            padding: 12px;
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid #243b55;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        #guessField:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        }
+
+        #subt {
+            width: 100%;
+            padding: 13px;
+            background: #243b55;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #subt:hover {
+            background: #007bff;
+            transform: translateY(-2px);
+        }
+
+        .resultParas {
+            margin-top: 25px;
+            padding: 15px;
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .resultParas p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .guesses {
+            color: #007bff;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .lastResult {
+            color: #e63946;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .lowOrHi {
+            font-weight: bold;
+            color: #243b55;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 480px) {
+            #weapper {
+                padding: 25px 18px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div id="weapper">
+        <h1>NUmber gussing game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+        <form class="form">
+            <label for="guessField " is="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="text" id="subt" value="submit guess" class="guessField">
+
+        </form>
+        <div class="resultParas">
+            <p>previous Guesses:<span class="guesses"></span></p>
+            <p>previous remaining:<span class="lastResult">10</span></p>
+            <p class="LowOrHi"></p>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
